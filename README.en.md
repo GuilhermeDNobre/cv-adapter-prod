@@ -60,37 +60,69 @@ edit or approve them.
 
 ## Run it
 
-You need:
+### First time
 
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/) on Windows or macOS, or Docker
-  Engine with the Compose plugin on Linux.
-- A DeepSeek API key with some credit, from [platform.deepseek.com](https://platform.deepseek.com).
-  The AI cost is whatever DeepSeek charges on that key; cv-adapter charges nothing.
-- Ports 3000, 3001, 5432 and 6379 free on `127.0.0.1`. A Postgres or Redis already running on your
-  machine will conflict with the containers.
+1. **Install Docker Desktop** ([docker.com](https://www.docker.com/products/docker-desktop/)) and
+   open it. On Windows the installer also sets up WSL2. Wait until Docker Desktop shows it is
+   running before going on. On Linux, use Docker Engine with the Compose plugin.
+2. **Create a DeepSeek key.** Make an account at
+   [platform.deepseek.com](https://platform.deepseek.com), add some credit and create a key on the
+   API keys page. The AI cost is whatever DeepSeek charges on that key. cv-adapter charges nothing.
+3. **Get the project.**
 
-Then:
+   ```bash
+   git clone https://github.com/GuilhermeDNobre/cv-adapter-prod.git
+   cd cv-adapter-prod
+   ```
 
-```bash
-git clone https://github.com/GuilhermeDNobre/cv-adapter-prod.git
-cd cv-adapter-prod
-docker compose up --build
-```
+   Without git, use **Code → Download ZIP** on this page, unzip it and open a terminal inside the
+   folder.
+4. **Start the app.**
 
-The first build takes a few minutes, because the `api` image includes Chromium for the PDF export.
-When the logs settle, open http://localhost:3000.
+   ```bash
+   docker compose up --build
+   ```
 
-There is no file to edit. The first screen asks for your DeepSeek key, checks it with DeepSeek
-without spending credit, and saves it. From there the app walks you through the six steps above.
-You can replace the key and see your balance later under **Configurações**.
+   The first time takes a few minutes, because the `api` image includes Chromium for the PDF
+   export. Wait until the logs settle.
+5. **Open http://localhost:3000.** The first screen asks for your DeepSeek key, checks it with
+   DeepSeek without spending credit, and saves it. From there the app walks you through the six
+   steps in [How it works](#how-it-works).
+
+None of these steps needs a file edited.
+
+### After the first time
+
+Open Docker Desktop and run the commands inside the project folder.
 
 | To | Run |
 |---|---|
-| Start again later | `docker compose up` |
-| Stop | `docker compose stop` |
+| Start again | `docker compose up` |
+| Stop | `Ctrl+C` in the terminal, or `docker compose stop` |
 | Update to a newer version | `git pull`, then `docker compose up --build` |
-| Delete all data | `docker compose down -v` |
 | Read the logs | `docker compose logs -f api worker` |
+| Delete all data | `docker compose down -v` |
+
+If you downloaded the ZIP, update by downloading it again. Your data lives in a Docker volume,
+outside the folder, so it stays. The key and your balance are under **Configurações**.
+
+### Common problems
+
+- **`failed to connect to the docker API` or `Cannot connect to the Docker daemon`.** Docker
+  Desktop is not open or is still starting. Open it, wait until it is ready and run the command
+  again.
+- **`port is already allocated` or `address already in use`.** Another program already uses port
+  3000, 3001, 5432 or 6379. Most often it is a Postgres or Redis installed on the machine. Stop it
+  and start again.
+- **The build is very slow or hangs.** The `api` image is heavy because of Chromium. On a machine
+  with little memory, close other programs and run it again. What was already built is not redone.
+- **http://localhost:3000 does not open.** The app is still starting: `web` only starts once `api`
+  is ready. Wait for the logs to settle and reload. If that doesn't help, check
+  `docker compose logs -f api worker`.
+- **DeepSeek rejects the key.** Check that you copied the whole key, without spaces, and that it
+  was not deleted in the DeepSeek dashboard.
+- **The AI fails in the middle of a step.** Check that your DeepSeek account still has credit. The
+  balance shows under **Configurações**.
 
 ## Stack
 

@@ -60,38 +60,70 @@ depois que você edita ou aprova.
 
 ## Como rodar
 
-Você precisa de:
+### Primeira vez
 
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/) no Windows ou no macOS, ou
-  Docker Engine com o plugin Compose no Linux.
-- Uma chave da API da DeepSeek com algum crédito, criada em
-  [platform.deepseek.com](https://platform.deepseek.com). O custo de IA é o que a DeepSeek cobrar
-  nessa chave. O cv-adapter não cobra nada.
-- As portas 3000, 3001, 5432 e 6379 livres em `127.0.0.1`. Um Postgres ou Redis que já rode na sua
-  máquina vai entrar em conflito com os containers.
+1. **Instale o Docker Desktop** ([docker.com](https://www.docker.com/products/docker-desktop/)) e
+   abra. No Windows, o instalador também configura o WSL2. Espere o Docker Desktop mostrar que está
+   rodando antes de seguir. No Linux, use o Docker Engine com o plugin Compose.
+2. **Crie uma chave da DeepSeek.** Faça uma conta em
+   [platform.deepseek.com](https://platform.deepseek.com), coloque um pouco de crédito e crie a
+   chave na página de API keys. O custo de IA é o que a DeepSeek cobrar nessa chave. O cv-adapter
+   não cobra nada.
+3. **Baixe o projeto.**
 
-Depois:
+   ```bash
+   git clone https://github.com/GuilhermeDNobre/cv-adapter-prod.git
+   cd cv-adapter-prod
+   ```
 
-```bash
-git clone https://github.com/GuilhermeDNobre/cv-adapter-prod.git
-cd cv-adapter-prod
-docker compose up --build
-```
+   Sem git, use **Code → Download ZIP** nesta página, descompacte e abra um terminal dentro da
+   pasta.
+4. **Suba o app.**
 
-O primeiro build leva alguns minutos, porque a imagem da `api` inclui o Chromium que gera o PDF.
-Quando os logs pararem de correr, abra http://localhost:3000.
+   ```bash
+   docker compose up --build
+   ```
 
-Não tem arquivo para editar. A primeira tela pede a sua chave da DeepSeek, confere com a DeepSeek
-sem gastar crédito e salva. Daí em diante o app te leva pelos seis passos acima. Dá para trocar a
-chave e ver o saldo depois, em **Configurações**.
+   Na primeira vez leva alguns minutos, porque a imagem da `api` inclui o Chromium que gera o PDF.
+   Espere os logs pararem de correr.
+5. **Abra http://localhost:3000.** A primeira tela pede a sua chave da DeepSeek, confere com a
+   DeepSeek sem gastar crédito e salva. Daí em diante o app te leva pelos seis passos de
+   [Como funciona](#como-funciona).
+
+Não tem arquivo para editar em nenhum desses passos.
+
+### Depois da primeira vez
+
+Abra o Docker Desktop e rode os comandos dentro da pasta do projeto.
 
 | Para | Rode |
 |---|---|
-| Subir de novo depois | `docker compose up` |
-| Parar | `docker compose stop` |
+| Subir de novo | `docker compose up` |
+| Parar | `Ctrl+C` no terminal, ou `docker compose stop` |
 | Atualizar para uma versão nova | `git pull`, depois `docker compose up --build` |
-| Apagar todos os dados | `docker compose down -v` |
 | Ver os logs | `docker compose logs -f api worker` |
+| Apagar todos os dados | `docker compose down -v` |
+
+Quem baixou o ZIP atualiza baixando o ZIP de novo. Os seus dados ficam num volume do Docker, fora
+da pasta, então continuam lá. A chave e o saldo ficam em **Configurações**.
+
+### Problemas comuns
+
+- **`failed to connect to the docker API` ou `Cannot connect to the Docker daemon`.** O Docker
+  Desktop não está aberto ou ainda está iniciando. Abra, espere ficar pronto e rode o comando de
+  novo.
+- **`port is already allocated` ou `address already in use`.** Outro programa já usa a porta 3000,
+  3001, 5432 ou 6379. O mais comum é um Postgres ou um Redis instalado na máquina. Pare esse serviço
+  e suba de novo.
+- **O build demora muito ou trava.** A imagem da `api` é pesada por causa do Chromium. Em máquina
+  com pouca memória, feche outros programas e rode de novo. O que já foi construído não é refeito.
+- **http://localhost:3000 não abre.** O app ainda está subindo: a `web` só começa depois que a `api`
+  fica pronta. Espere os logs pararem e recarregue. Se não resolver, veja
+  `docker compose logs -f api worker`.
+- **A chave da DeepSeek é recusada.** Confira se copiou a chave inteira, sem espaços, e se ela não
+  foi apagada no painel da DeepSeek.
+- **A IA falha no meio de uma etapa.** Veja se a conta da DeepSeek ainda tem crédito. O saldo
+  aparece em **Configurações**.
 
 ## Stack
 
