@@ -1,73 +1,76 @@
 # cv-adapter
 
-Tailors your resume to one specific job posting with AI, using only what is already in your resume.
-It runs on your own machine with Docker, and you bring your own DeepSeek API key.
+[English](README.en.md)
 
-The interface is in Brazilian Portuguese. The resume it writes follows the language of the job
-posting, Portuguese or English.
+Adapta o seu currículo para uma vaga específica com IA, usando só o que já está nele. Roda no seu
+computador com Docker, e você usa a sua própria chave da API da DeepSeek.
 
-## Who it is for
+A interface é em português. O currículo gerado sai no idioma da vaga, português ou inglês.
 
-People applying to a lot of jobs with one resume: students, interns and juniors looking for their
-first or next role, or anyone who keeps rewriting the same resume for every posting.
+## Para quem é
 
-Most companies run applications through an ATS before a person reads them. The ATS has to parse your
-file, and the recruiter searching it looks for the words the posting uses. A single generic resume
-does badly at both. Tailoring it by hand for every posting takes an evening each time, and asking a
-chatbot to do it tends to produce a resume with tools and numbers you never had, which falls apart
-in the interview.
+Para quem manda o mesmo currículo para muitas vagas: estudantes, estagiários e juniores procurando a
+primeira ou a próxima oportunidade, ou qualquer pessoa que vive reescrevendo o currículo a cada
+anúncio.
 
-cv-adapter does the tailoring and keeps it honest: it can reorder, refocus and rewrite what you
-already did, but it cannot add what you didn't.
+A maioria das empresas passa as candidaturas por um ATS antes de alguém ler. O ATS precisa
+conseguir ler o seu arquivo, e quem recruta procura nele as palavras que a vaga usa. Um currículo
+genérico vai mal nas duas coisas. Adaptar na mão para cada vaga toma uma noite inteira, e pedir para
+um chatbot fazer isso costuma devolver um currículo com ferramentas e números que você nunca teve,
+que não se sustentam na entrevista.
 
-## How it works
+O cv-adapter faz essa adaptação sem inventar. Ele pode reordenar, mudar o foco e reescrever o que
+você já fez, mas não pode acrescentar o que você não fez.
 
-1. **Import your resume.** Upload a PDF. Your name and contact details are split off before
-   anything is sent to the AI, and the rest becomes your career profile: each experience with the
-   evidence lines behind it. You review and correct it before it is saved.
-2. **Paste a job posting.** It is broken down into requirements, required and nice to have.
-3. **See the match.** Each requirement is marked covered, partial or missing against your profile,
-   with a match score.
-4. **Get a tailored resume.** Every experience you have stays in, including the small ones. What
-   changes is the focus, the order and the wording, aimed at a single A4 page.
-5. **Review it.** See what changed, undo what you don't want, or ask the AI to rewrite a section
-   the way you describe.
-6. **Export the PDF.** One column, no photo, no tables, plain section titles, so an ATS can read it.
-   The preview and the PDF come from the same template.
+## Como funciona
 
-Imported resumes stay saved under **Meus currículos**. For the next posting you paste the job and
-pick one of them, and the import step is skipped.
+1. **Importe o seu currículo.** Envie um PDF. Seu nome e seus dados de contato são separados antes
+   de qualquer coisa ir para a IA, e o resto vira o seu perfil profissional: cada experiência com as
+   evidências que a sustentam. Você revisa e corrige tudo antes de salvar.
+2. **Cole o anúncio da vaga.** Ele é dividido em requisitos, obrigatórios e desejáveis.
+3. **Veja a aderência.** Cada requisito aparece como coberto, parcial ou gap em relação ao seu
+   perfil, com uma nota de 0 a 100.
+4. **Receba o currículo adaptado.** Todas as suas experiências continuam, inclusive as menores. O
+   que muda é o foco, a ordem e a escrita, pensando em uma única página A4.
+5. **Revise.** Veja o que mudou, desfaça o que não quiser ou peça para a IA reescrever uma seção do
+   jeito que você descrever.
+6. **Exporte o PDF.** Uma coluna, sem foto, sem tabelas e com títulos de seção simples, para o ATS
+   conseguir ler. A pré-visualização e o PDF saem do mesmo template.
 
-## What it will not do
+Os currículos importados ficam salvos em **Meus currículos**. Na próxima vaga, você cola o anúncio,
+escolhe um deles e pula a importação.
 
-The AI does not add numbers, tools, scale or job titles that are not in your own resume. Before a
-generated line reaches the document, its numbers and names are checked against the evidence it came
-from. A line that fails the check becomes a suggestion, and suggestions only reach the PDF after you
-edit or approve them.
+## O que ele não faz
 
-## Privacy
+A IA não acrescenta números, ferramentas, escala nem cargos que não estejam no seu currículo. Antes
+de uma linha gerada entrar no documento, os números e nomes dela são conferidos com a evidência de
+onde ela veio. Uma linha que não passa na conferência vira sugestão, e sugestão só entra no PDF
+depois que você edita ou aprova.
 
-- Everything is stored in a local Postgres database, in a Docker volume on your machine.
-- The only thing that leaves your machine is what goes to the DeepSeek API: your resume without your
-  name and contact details, plus the job posting.
-- Your DeepSeek key is typed into the app and stored in that same local database. It never goes in
-  a file or an environment variable.
-- There is no login. One instance belongs to one person, and every port is bound to `127.0.0.1`.
-  Don't expose it to a network.
-- **Configurações** lets you erase generated resumes or wipe all your data.
+## Privacidade
 
-## Run it
+- Tudo fica num Postgres local, num volume do Docker na sua máquina.
+- A única coisa que sai do seu computador é o que vai para a API da DeepSeek: o seu currículo sem
+  nome e dados de contato, mais o anúncio da vaga.
+- A sua chave da DeepSeek é digitada no app e guardada nesse mesmo banco local. Ela nunca vai para
+  um arquivo nem para uma variável de ambiente.
+- Não há login. Uma instalação é de uma pessoa só, e todas as portas ficam presas a `127.0.0.1`.
+  Não exponha o app na rede.
+- Em **Configurações** você apaga os currículos gerados ou todos os seus dados.
 
-You need:
+## Como rodar
 
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/) on Windows or macOS, or Docker
-  Engine with the Compose plugin on Linux.
-- A DeepSeek API key with some credit, from [platform.deepseek.com](https://platform.deepseek.com).
-  The AI cost is whatever DeepSeek charges on that key; cv-adapter charges nothing.
-- Ports 3000, 3001, 5432 and 6379 free on `127.0.0.1`. A Postgres or Redis already running on your
-  machine will conflict with the containers.
+Você precisa de:
 
-Then:
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) no Windows ou no macOS, ou
+  Docker Engine com o plugin Compose no Linux.
+- Uma chave da API da DeepSeek com algum crédito, criada em
+  [platform.deepseek.com](https://platform.deepseek.com). O custo de IA é o que a DeepSeek cobrar
+  nessa chave. O cv-adapter não cobra nada.
+- As portas 3000, 3001, 5432 e 6379 livres em `127.0.0.1`. Um Postgres ou Redis que já rode na sua
+  máquina vai entrar em conflito com os containers.
+
+Depois:
 
 ```bash
 git clone https://github.com/GuilhermeDNobre/cv-adapter-prod.git
@@ -75,49 +78,49 @@ cd cv-adapter-prod
 docker compose up --build
 ```
 
-The first build takes a few minutes, because the `api` image includes Chromium for the PDF export.
-When the logs settle, open http://localhost:3000.
+O primeiro build leva alguns minutos, porque a imagem da `api` inclui o Chromium que gera o PDF.
+Quando os logs pararem de correr, abra http://localhost:3000.
 
-There is no file to edit. The first screen asks for your DeepSeek key, checks it with DeepSeek
-without spending credit, and saves it. From there the app walks you through the six steps above.
-You can replace the key and see your balance later under **Configurações**.
+Não tem arquivo para editar. A primeira tela pede a sua chave da DeepSeek, confere com a DeepSeek
+sem gastar crédito e salva. Daí em diante o app te leva pelos seis passos acima. Dá para trocar a
+chave e ver o saldo depois, em **Configurações**.
 
-| To | Run |
+| Para | Rode |
 |---|---|
-| Start again later | `docker compose up` |
-| Stop | `docker compose stop` |
-| Update to a newer version | `git pull`, then `docker compose up --build` |
-| Delete all data | `docker compose down -v` |
-| Read the logs | `docker compose logs -f api worker` |
+| Subir de novo depois | `docker compose up` |
+| Parar | `docker compose stop` |
+| Atualizar para uma versão nova | `git pull`, depois `docker compose up --build` |
+| Apagar todos os dados | `docker compose down -v` |
+| Ver os logs | `docker compose logs -f api worker` |
 
 ## Stack
 
-| Layer | Choice |
+| Camada | Escolha |
 |---|---|
-| Monorepo | pnpm workspaces and Turborepo |
-| Frontend | Next.js and TypeScript (`apps/web`) |
-| Backend | NestJS (`apps/api`), with a BullMQ worker as a second entrypoint of the same image |
-| Database | PostgreSQL 16 through Drizzle |
-| Queue | Redis 7 |
-| AI | DeepSeek-V4-Flash, official API |
-| PDF in | `@firecrawl/pdf-inspector` |
-| PDF out | Chromium via `playwright-core`, paginated by Paged.js, A4 |
-| Tests | Vitest, plus Playwright and axe for the browser flow |
+| Monorepo | pnpm workspaces e Turborepo |
+| Frontend | Next.js e TypeScript (`apps/web`) |
+| Backend | NestJS (`apps/api`), com um worker BullMQ como segundo entrypoint da mesma imagem |
+| Banco | PostgreSQL 16 via Drizzle |
+| Fila | Redis 7 |
+| IA | DeepSeek-V4-Flash, API oficial |
+| Leitura do PDF | `@firecrawl/pdf-inspector` |
+| Geração do PDF | Chromium via `playwright-core`, paginado pelo Paged.js, A4 |
+| Testes | Vitest, mais Playwright e axe para o fluxo no navegador |
 
-## Repository layout
+## Estrutura do repositório
 
-| Path | What is there |
+| Caminho | O que tem |
 |---|---|
-| `apps/web` | The Next.js app: import, review, job, match, tailoring, review and export screens |
-| `apps/api` | The NestJS API (`src/main.ts`) and the queue worker (`src/main.worker.ts`) |
-| `packages/schema` | Database schema, migrations and the request/response contracts both apps share |
-| `packages/resume-templates` | The resume HTML/CSS used by both the preview and the PDF |
-| `docs/adr` | Architecture decision records, in Portuguese |
-| `CONTEXT.md` | Domain glossary, in Portuguese |
+| `apps/web` | O app Next.js: telas de importação, revisão do perfil, vaga, avaliação, adaptação, revisão do currículo e exportação |
+| `apps/api` | A API NestJS (`src/main.ts`) e o worker da fila (`src/main.worker.ts`) |
+| `packages/schema` | Schema do banco, migrações e os contratos de requisição e resposta que os dois apps usam |
+| `packages/resume-templates` | O HTML/CSS do currículo, usado na pré-visualização e no PDF |
+| `docs/adr` | Registros das decisões de arquitetura |
+| `CONTEXT.md` | Glossário do domínio |
 
-## Development
+## Desenvolvimento
 
-You need Node 22 and pnpm (`corepack enable` picks the version pinned in `package.json`).
+Você precisa de Node 22 e pnpm (`corepack enable` usa a versão fixada no `package.json`).
 
 ```bash
 docker compose up -d postgres redis
@@ -127,29 +130,30 @@ pnpm type-check
 pnpm test
 ```
 
-Integration tests use the two containers above. Tests connect to `127.0.0.1`, never `localhost`:
-on Windows `localhost` resolves to IPv6 first and the containers only listen on IPv4.
+Os testes de integração usam os dois containers acima. Eles conectam em `127.0.0.1`, nunca em
+`localhost`: no Windows, `localhost` resolve primeiro para IPv6, e os containers só escutam em IPv4.
 
-The PDF tests in `apps/api` need Playwright's Chromium:
+Os testes de PDF em `apps/api` precisam do Chromium do Playwright:
 
 ```bash
 ./apps/api/node_modules/.bin/playwright-core install chromium
 ```
 
-The browser tests live in `apps/web/e2e` and need no DeepSeek key; the harness fakes the AI:
+Os testes de navegador ficam em `apps/web/e2e` e não precisam de chave da DeepSeek, porque o harness
+simula a IA:
 
 ```bash
 pnpm --filter web exec playwright install chromium
 pnpm --filter web test:e2e
 ```
 
-On a machine short on memory, run one package at a time with fewer workers, for example
+Numa máquina com pouca memória, rode um pacote por vez e com menos workers, por exemplo
 `pnpm --filter api exec vitest run --maxWorkers=2`.
 
-## Bugs and ideas
+## Bugs e ideias
 
-Open an issue. It is a side project, so fixes come as I find time.
+Abra uma issue. É um projeto paralelo, então as correções saem conforme eu tenho tempo.
 
-## License
+## Licença
 
 [MIT](LICENSE)
