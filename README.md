@@ -3,9 +3,22 @@
 Tailors your resume to one specific job posting with AI, using only what is already in your resume.
 It runs on your own machine with Docker, and you bring your own DeepSeek API key.
 
-[![30-second demo](docs/media/showreel-poster.png)](docs/media/showreel.mp4)
+The interface is in Brazilian Portuguese. The resume it writes follows the language of the job
+posting, Portuguese or English.
 
-The interface is in Brazilian Portuguese. The demo uses a made-up person and job.
+## Who it is for
+
+People applying to a lot of jobs with one resume: students, interns and juniors looking for their
+first or next role, or anyone who keeps rewriting the same resume for every posting.
+
+Most companies run applications through an ATS before a person reads them. The ATS has to parse your
+file, and the recruiter searching it looks for the words the posting uses. A single generic resume
+does badly at both. Tailoring it by hand for every posting takes an evening each time, and asking a
+chatbot to do it tends to produce a resume with tools and numbers you never had, which falls apart
+in the interview.
+
+cv-adapter does the tailoring and keeps it honest: it can reorder, refocus and rewrite what you
+already did, but it cannot add what you didn't.
 
 ## How it works
 
@@ -15,12 +28,15 @@ The interface is in Brazilian Portuguese. The demo uses a made-up person and job
 2. **Paste a job posting.** It is broken down into requirements, required and nice to have.
 3. **See the match.** Each requirement is marked covered, partial or missing against your profile,
    with a match score.
-4. **Get a tailored resume.** Every experience you have stays in. What changes is the focus, the
-   order and the wording, aimed at a single A4 page.
+4. **Get a tailored resume.** Every experience you have stays in, including the small ones. What
+   changes is the focus, the order and the wording, aimed at a single A4 page.
 5. **Review it.** See what changed, undo what you don't want, or ask the AI to rewrite a section
    the way you describe.
-6. **Export the PDF.** The preview and the PDF come from the same HTML template, rendered by
-   Chromium inside the `api` container.
+6. **Export the PDF.** One column, no photo, no tables, plain section titles, so an ATS can read it.
+   The preview and the PDF come from the same template.
+
+Imported resumes stay saved under **Meus currículos**. For the next posting you paste the job and
+pick one of them, and the import step is skipped.
 
 ## What it will not do
 
@@ -40,31 +56,39 @@ edit or approve them.
   Don't expose it to a network.
 - **Configurações** lets you erase generated resumes or wipe all your data.
 
-## Requirements
+## Run it
 
-- Docker with Compose v2.
+You need:
+
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) on Windows or macOS, or Docker
+  Engine with the Compose plugin on Linux.
 - A DeepSeek API key with some credit, from [platform.deepseek.com](https://platform.deepseek.com).
+  The AI cost is whatever DeepSeek charges on that key; cv-adapter charges nothing.
 - Ports 3000, 3001, 5432 and 6379 free on `127.0.0.1`. A Postgres or Redis already running on your
   machine will conflict with the containers.
 
-## Run
+Then:
 
 ```bash
+git clone https://github.com/GuilhermeDNobre/cv-adapter-prod.git
+cd cv-adapter-prod
 docker compose up --build
 ```
 
-Then open http://localhost:3000. The first build takes a few minutes, because the `api` image
-includes Chromium for the PDF export.
+The first build takes a few minutes, because the `api` image includes Chromium for the PDF export.
+When the logs settle, open http://localhost:3000.
 
 There is no file to edit. The first screen asks for your DeepSeek key, checks it with DeepSeek
-without spending credit, and saves it. You can replace the key and see your balance later under
-**Configurações**.
+without spending credit, and saves it. From there the app walks you through the six steps above.
+You can replace the key and see your balance later under **Configurações**.
 
-| Action | Command |
+| To | Run |
 |---|---|
+| Start again later | `docker compose up` |
 | Stop | `docker compose stop` |
+| Update to a newer version | `git pull`, then `docker compose up --build` |
 | Delete all data | `docker compose down -v` |
-| Logs | `docker compose logs -f api worker` |
+| Read the logs | `docker compose logs -f api worker` |
 
 ## Stack
 
@@ -121,6 +145,10 @@ pnpm --filter web test:e2e
 
 On a machine short on memory, run one package at a time with fewer workers, for example
 `pnpm --filter api exec vitest run --maxWorkers=2`.
+
+## Bugs and ideas
+
+Open an issue. It is a side project, so fixes come as I find time.
 
 ## License
 
