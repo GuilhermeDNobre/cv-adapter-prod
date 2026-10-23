@@ -1,0 +1,1 @@
+ALTER TYPE "public"."evaluation_failure_reason" ADD VALUE 'rewrite_claims_rejected';

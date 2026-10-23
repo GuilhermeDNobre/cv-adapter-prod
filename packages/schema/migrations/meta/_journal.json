@@ -1,0 +1,132 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1788608630686,
+      "tag": "0000_third_sphinx",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1789584289147,
+      "tag": "0001_remove_auth",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1789632652628,
+      "tag": "0002_source_documents",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1789648683164,
+      "tag": "0003_partial_dates",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1789753367034,
+      "tag": "0004_key_and_failure_reasons",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1789959688943,
+      "tag": "0005_resume_documents",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1790107934328,
+      "tag": "0006_blushing_wild_child",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1790109767008,
+      "tag": "0007_regular_cammi",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1790143215653,
+      "tag": "0008_demonic_blue_blade",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1790291076697,
+      "tag": "0009_parallel_thunderball",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1790294330511,
+      "tag": "0010_free_colonel_america",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "7",
+      "when": 1790304824865,
+      "tag": "0011_shiny_vertigo",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "7",
+      "when": 1790349175915,
+      "tag": "0012_rainy_genesis",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "7",
+      "when": 1790357816873,
+      "tag": "0013_black_stellaris",
+      "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "7",
+      "when": 1792417961126,
+      "tag": "0014_youthful_carnage",
+      "breakpoints": true
+    },
+    {
+      "idx": 15,
+      "version": "7",
+      "when": 1792430259214,
+      "tag": "0015_pale_shotgun",
+      "breakpoints": true
+    },
+    {
+      "idx": 16,
+      "version": "7",
+      "when": 1792498457162,
+      "tag": "0016_secret_echo",
+      "breakpoints": true
+    },
+    {
+      "idx": 17,
+      "version": "7",
+      "when": 1792499622161,
+      "tag": "0017_colorful_triathlon",
+      "breakpoints": true
+    }
+  ]
+}

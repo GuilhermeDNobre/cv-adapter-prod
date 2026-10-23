@@ -1,0 +1,51 @@
+{
+  "name": "api",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "dev:worker": "tsx watch src/main.worker.ts",
+    "build": "tsc",
+    "start": "node dist/apps/api/src/main.js",
+    "start:worker": "node dist/apps/api/src/main.worker.js",
+    "type-check": "tsc --noEmit",
+    "test": "vitest run",
+    "lint": "eslint src/ e2e/"
+  },
+  "dependencies": {
+    "@firecrawl/pdf-inspector": "^1.17.0",
+    "@nestjs/bullmq": "^11.0.2",
+    "@nestjs/common": "^11.0.10",
+    "@nestjs/config": "^4.0.0",
+    "@nestjs/core": "^11.0.10",
+    "@nestjs/platform-express": "^11.0.10",
+    "axios": "^1.7.9",
+    "bullmq": "^5.41.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.15.1",
+    "drizzle-orm": "^0.39.3",
+    "ioredis": "^5.5.0",
+    "pagedjs": "0.4.3",
+    "pg": "^8.13.3",
+    "playwright-core": "1.62.1",
+    "reflect-metadata": "^0.2.2",
+    "resume-templates": "workspace:*",
+    "rxjs": "^7.8.1",
+    "schema": "workspace:*",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@cv-adapter/tsconfig": "workspace:*",
+    "@nestjs/testing": "^11.2.3",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.5",
+    "@types/pg": "^8.11.11",
+    "@types/supertest": "^7.2.1",
+    "drizzle-kit": "^0.30.4",
+    "eslint": "^9.20.0",
+    "supertest": "^7.2.2",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.6"
+  }
+}

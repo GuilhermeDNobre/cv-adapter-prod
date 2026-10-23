@@ -1,0 +1,21 @@
+Renata Emerald
+Backend Engineer
+
+Experience
+
+Quartz Ltd — Senior Developer (2020–2024)
+
+Designed the payments API that processed ten million
+requests a day, with 99.9% success.
+
+Cut error rates from two percent to zero point two percent.
+
+Mentored four junior developers through weekly design reviews.
+
+Education
+
+Hilltop University — B.Sc. Computer Science (2016–2020)
+
+Skills
+
+Python, Django, PostgreSQL, Redis

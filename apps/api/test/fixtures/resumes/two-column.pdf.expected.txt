@@ -1,0 +1,38 @@
+# MARIANA QUARTZ
+
+### Backend Developer
+
+## SUMMARY
+
+Backend developer focused on Python services for eight years, shipping reliable payment and data APIs used by thousands of teams.
+
+## EXPERIENCE
+
+### Northwind Software
+
+Lead Engineer (2020-2024) Rebuilt the checkout pipeline and cut latency by forty percent during the migration to event driven services. Mentored five engineers through weekly design reviews and pairing sessions.
+
+### Vendor Alpha
+
+Python Developer (2016-2020) Built ingestion jobs handling one million events per day with Celery and Redis. Owned the on-call rotation for the payments domain and cut incident time in half with better runbooks.
+
+### Baltic Systems
+
+Junior Developer (2014-2016) Maintained Django dashboards for logistics customers across three countries.
+
+## SKILLS
+
+Python, Django, Flask, Celery, Redis, PostgreSQL, Docker, Kubernetes, Terraform
+
+## EDUCATION
+
+### Delta Institute
+
+B.Sc. Computer Science (2010-2014)
+## LANGUAGES
+
+Portuguese (native) English (fluent) Spanish (intermediate)
+
+## CERTIFICATIONS
+
+Professional Cloud Developer (2021) Certified Kubernetes Administrator (2022)

@@ -1,0 +1,65 @@
+# Lucas Martins Prado
+
+Quixadá, CE•(00) 00000-0000•pessoa@example.com•LinkedIn•GitHub
+
+## Objetivo
+
+Estudante de Engenharia de Software buscando estágio ou primeira oportunidade em desenvolvimento Fullstack, com foco em tecnologias web modernas (React, Node.js, NestJS, Spring Boot) e entrega de soluções escaláveis de ponta a ponta.
+
+## Habilidades Técnicas
+
+•**Linguagens:** JavaScript/TypeScript, Java, Python •**Back-end:** Fastify, NestJS, Spring Boot, Node.js •**Front-end:** React, Next.js, HTML5, CSS3, Tailwind CSS •**Banco de Dados / Mensageria:** PostgreSQL, MongoDB, Redis, RabbitMQ •**DevOps/Ferramentas:** Git/GitHub, Docker, CI/CD (GitHub Actions/GitLab CI), Scrum
+
+## Experiência
+
+**ExampleApp — Trabalho Autônomo**Remoto *Desenvolvedor Full Stack Independente Mar 2026 – Jun 2026* •Idealizei, projetei e desenvolvi sozinho, do zero ao deploy em produção, uma plataforma SaaS (example-app.com) para pet shops. •Arquitetei a API REST em Fastify/TypeScript com MongoDB e Cloudflare R2 (storage de fotos), documentada em OpenAPI/Swagger, cobrindo upload multipart, geração de QR Code e e-mail transacional (Resend). •Integrei dois métodos de pagamento (PIX e cartão) com validação de webhook por comparação HMAC de tempo constante. •Construí o front-end em React/TypeScript com wizard multi-etapas (React Hook Form + Zod), mapas interativos (MapLibre GL/Leaflet) e animações (Framer Motion/GSAP). •Cobri o produto com testes unitários e de integração (Jest), somando 48 suítes e 312 casos automatizados entre back-end e front-end. •Configurei pipeline de CI/CD no GitHub Actions (build e testes de back-end/front-end a cada push, deploy automá- tico no Fly.io) e orquestrei um pipeline próprio de agentes de IA para geração de PRD, tech spec, execução de tasks e code review, sustentando entregas solo consistentes ao longo de mais de 90 commits. **Instituto Pontes do Saber** *Tutor de Programação*
+
+alunos com acompanhamento individualizado. **Quadra Informática** *Estágio em Desenvolvimento Web*
+
+### presença digital da empresa.
+
+## Projetos
+
+**Ativo Track — Sistema de Asset Control**Ago 2025 - Jan 2026
+
+construtora, com design modular e orientado a objetos.
+
+Docker. **Projeto Pix — Sistema de Pagamentos Instantâneos** *Back-end e APIs*
+
+### PostgreSQL e Docker.
+
+## Educação
+
+**Universidade Federal da Serra (UFS)**Quixadá, CE *Bacharelado em Engenharia de Software* **Escola Técnica Horizonte**Morada Nova, CE *Curso Técnico em Informática*
+
+## Idiomas
+
+### •Português: NativoInglês: Avançado (C1)
+
+Remoto *Jul 2025 - Dez 2025*
+
+Morada Nova, CE *Jun 2019 – Dez 2019*
+
+### Java, Spring Boot, PostgreSQL, Docker
+
+### 2021 – Presente
+
+### 2017 – 2019
+
+•Atuei como tutor no curso “Lógica de Programação na Prática”, tirando dúvidas e avaliando exercícios de
+
+•Desenvolvi uma SPA para catálogo de produtos da loja usando JavaScript (Vanilla) e Bootstrap, melhorando a
+
+*Desenvolvimento Web Fullstack React, NestJS, TypeScript, PostgreSQL, Docker* •Desenvolvi API REST com NestJS e PostgreSQL para controle de inventário e rastreamento de ativos de TI de uma
+
+•Construí front-end web com React/Next.js e interface desktop com Electron, containerizando toda a aplicação com
+
+### Ago 2024 - Dez 2024
+
+•Desenvolvi APIs REST para gerenciamento de chaves Pix e simulação de transações bancárias com Spring Boot,
+
+https://linkedin.com/in/lucas-prado
+https://github.com/lucas-prado
+https://example-app.com
+https://github.com/lucas-prado/ativo-track-api
+https://github.com/lucas-prado/pix-equipe-4

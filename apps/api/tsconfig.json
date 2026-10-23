@@ -1,0 +1,20 @@
+{
+  "extends": "@cv-adapter/tsconfig/node.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "schema": [
+        "../../packages/schema/src/index.ts"
+      ],
+      "schema/*": [
+        "../../packages/schema/src/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "test/**/*",
+    "e2e/**/*"
+  ]
+}

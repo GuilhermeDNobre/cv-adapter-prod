@@ -1,0 +1,19 @@
+# Text files are normalised to LF in the repository and checked out per platform.
+* text=auto
+
+# Binary fixtures must never be touched by end-of-line conversion. core.autocrlf
+# is true on Windows, and without this a clone injects CR bytes into every PDF,
+# corrupting the extractor corpus with a parse error that reads like a code bug.
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
+
+# Lockfile stays LF so it does not churn between platforms.
+pnpm-lock.yaml text eol=lf

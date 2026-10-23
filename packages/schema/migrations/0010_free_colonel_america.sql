@@ -1,0 +1,1 @@
+ALTER TABLE "resume_imports" ADD COLUMN "base_resume_proposal" jsonb;

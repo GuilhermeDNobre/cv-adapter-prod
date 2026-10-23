@@ -1,0 +1,2 @@
+CREATE TYPE "public"."resume_generation_step" AS ENUM('planning', 'writing', 'suggesting', 'saving');--> statement-breakpoint
+ALTER TABLE "resumes" ADD COLUMN "generation_step" "resume_generation_step";

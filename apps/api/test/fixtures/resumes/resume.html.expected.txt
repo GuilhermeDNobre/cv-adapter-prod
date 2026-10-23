@@ -1,0 +1,15 @@
+VICTOR ONYX
+
+DevOps Engineer — São Paulo, Brazil
+
+Experience
+
+Amber Cloud – DevOps Engineer (2021-2024)
+
+Automated the deploy pipeline & cut release time by half
+
+Kept the staging cluster at ≥ 99% availability
+
+Education
+
+Riverstone University — B.Sc. Computer Science (2017-2021)

@@ -1,0 +1,17 @@
+# JANET DOE
+
+### Senior Software Engineer
+
+## EXPERIENCE
+
+### Acme Corp-Software Engineer (2019-2023)
+
+Led a team of five engineers to ship the billing platform that processed two million invoices a month. Improved deploy frequency from weekly to daily by rewriting the release pipeline in GitHub Actions.
+
+## EDUCATION
+
+State University-B.Sc. Computer Science (2015-2019)
+
+## SKILLS
+
+Python, Django, PostgreSQL, Docker, Kubernetes

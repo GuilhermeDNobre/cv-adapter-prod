@@ -1,0 +1,1 @@
+ALTER TABLE "contact_details" ADD COLUMN "city" text;

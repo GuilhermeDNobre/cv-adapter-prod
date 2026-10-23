@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Next.js
+.next/
+out/
+
+# Build artifacts
+dist/
+build/
+*.tsbuildinfo
+
+# Turborepo
+.turbo/
+
+# Environment files
+.env
+.env*.local
+!.env.example
+
+# Test artifacts and coverage
+coverage/
+test-results/
+playwright-report/
+blob-report/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# System and editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Generated Paged.js polyfill (copied from the pagedjs dependency via copy:paged)
+apps/web/public/paged.polyfill.js
+
+.playwright-mcp/

@@ -1,0 +1,1 @@
+ALTER TABLE "skills" ADD COLUMN "ordinal" integer DEFAULT 0 NOT NULL;

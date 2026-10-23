@@ -1,0 +1,48 @@
+%PDF-1.7
+%‚„œ”
+1 0 obj
+<< /Pages 2 0 R /Type /Catalog >>
+endobj
+2 0 obj
+<< /Count 1 /Kids [ 3 0 R ] /Type /Pages >>
+endobj
+3 0 obj
+<< /Contents 6 0 R /CropBox [ 0 0 612 792 ] /MediaBox [ 0 0 612 792 ] /Parent 2 0 R /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Type /Page >>
+endobj
+4 0 obj
+<< /BaseFont /Helvetica /Subtype /Type1 /Type /Font >>
+endobj
+5 0 obj
+<< /BaseFont /Helvetica-Bold /Subtype /Type1 /Type /Font >>
+endobj
+6 0 obj
+<< /Length 815 >>
+stream
+BT /F2 16 Tf 56 740 Td (JANET DOE) Tj ET
+BT /F1 11 Tf 56 720 Td (Senior Software Engineer) Tj ET
+BT /F2 12 Tf 56 696.25 Td (EXPERIENCE) Tj ET
+BT /F2 10 Tf 56 681.25 Td (Acme Corp - Software Engineer \(2019-2023\)) Tj ET
+BT /F1 10 Tf 56 668.75 Td (Led a team of five engineers to ship the billing platform) Tj ET
+BT /F1 10 Tf 56 656.25 Td (that processed two million invoices a month.) Tj ET
+BT /F1 10 Tf 56 643.75 Td (Improved deploy frequency from weekly to daily by) Tj ET
+BT /F1 10 Tf 56 631.25 Td (rewriting the release pipeline in GitHub Actions.) Tj ET
+BT /F2 12 Tf 56 608.75 Td (EDUCATION) Tj ET
+BT /F1 10 Tf 56 593.75 Td (State University - B.Sc. Computer Science \(2015-2019\)) Tj ET
+BT /F2 12 Tf 56 571.25 Td (SKILLS) Tj ET
+BT /F1 10 Tf 56 556.25 Td (Python, Django, PostgreSQL, Docker, Kubernetes) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000123 00000 n 
+0000000286 00000 n 
+0000000356 00000 n 
+0000000431 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+1296
+%%EOF

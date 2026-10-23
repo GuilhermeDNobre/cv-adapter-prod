@@ -1,0 +1,48 @@
+# Pedro Alves Rocha
+
+## Morada Nova ▪ CE, Brazil
+
+## +55 00 00000-0000 ▪ <u>pessoa@example.com</u>
+
+30 years old
+
+## EXPERIENCE
+
+## Lume Idiomas
+
+JULY 2017 – DECEMBER 2017 **Intern as Web Developer– Full Stack** Team development of a language school management system, and the company’s business website. · Direct contact with stakeholders and other developers · SCRUM as develop framework · PHP and Bootstrap · MySQL with SQL
+
+## Laboratório de Sistemas Aplicados (LSA)
+
+FEBRUARY 2023 – DECEMBER 2023 **Intern as Web Developer– Full Stack** · Practices in migrating electronic inventory systems. · Direct collaboration with other developers, teamwork organization · Use of SCRUM as an agile methodology. · Use of Git for version control and GitLab for task organization. · PostgreSQL · Java / Spring Boot · RESTful API · Jest · Vue.js 3
+
+## ACADEMIC FORMATION
+
+## FEDERAL UNIVERSITY OF THE HIGHLANDS (UNIVERSIDADE FEDERAL DA SERRA)
+
+## QUIXADÁ CAMPUS | 2018 - 2025
+
+Bachelor in Software Engineering
+
+## STATE SCHOOL OF VOCATIONAL EDUCATION – EEEP HORIZONTE
+
+## MORADA NOVA, CEARÁ, BRAZIL | 2015 – 2017
+
+High School with Technical Education in Information Technology (5,400 hours)
+
+# QUALIFICATION
+
+- Scrum Foundations Professional Certificate SFPC | CertiProf | Jul 2021
+- Java/Spring
+- RESTful API
+- Vue.js
+- Jest
+- PostgreSQL
+- Jaspersoft
+- Git
+- Linux e Windows
+- HTML/CSS
+- Javascript
+# LANGUAGE
+
+English-Advanced Spanish – Basic

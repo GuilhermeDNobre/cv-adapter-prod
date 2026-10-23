@@ -1,0 +1,27 @@
+# Patterns without "**/" only match at the root. In a pnpm monorepo the nested node_modules are
+# symlink-heavy and must never enter the build context: every image installs its own. So every
+# pattern here uses "**/".
+**/node_modules
+**/dist
+**/.next
+**/.turbo
+**/*.tsbuildinfo
+.git
+.github
+.claude
+tasks
+docs
+**/*.md
+**/*.spec.ts
+**/*.spec.tsx
+**/*.test.ts
+apps/api/test
+apps/api/e2e
+docker-compose.yml
+.env
+.env.*
+!.env.example
+**/.eslintcache
+**/coverage
+**/test-results
+**/playwright-report

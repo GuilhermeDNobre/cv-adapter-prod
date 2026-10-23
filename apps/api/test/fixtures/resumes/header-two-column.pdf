@@ -1,0 +1,82 @@
+%PDF-1.7
+%‚„œ”
+1 0 obj
+<< /Pages 2 0 R /Type /Catalog >>
+endobj
+2 0 obj
+<< /Count 1 /Kids [ 3 0 R ] /Type /Pages >>
+endobj
+3 0 obj
+<< /Contents 6 0 R /CropBox [ 0 0 612 792 ] /MediaBox [ 0 0 612 792 ] /Parent 2 0 R /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Type /Page >>
+endobj
+4 0 obj
+<< /BaseFont /Helvetica /Subtype /Type1 /Type /Font >>
+endobj
+5 0 obj
+<< /BaseFont /Helvetica-Bold /Subtype /Type1 /Type /Font >>
+endobj
+6 0 obj
+<< /Length 2793 >>
+stream
+BT /F2 16 Tf 56 740 Td (PATRICK RUBY) Tj ET
+BT /F1 11 Tf 56 720 Td (Full Stack Engineer - Sao Paulo, Brazil) Tj ET
+BT /F2 12 Tf 56 695 Td (EXPERIENCE) Tj ET
+BT /F2 10 Tf 56 680 Td (Emerald Labs) Tj ET
+BT /F1 10 Tf 56 667.5 Td (Full Stack Engineer \(2019-2024\)) Tj ET
+BT /F1 10 Tf 56 655 Td (Shipped the customer portal used by) Tj ET
+BT /F1 10 Tf 56 642.5 Td (three thousand teams across the country.) Tj ET
+BT /F1 10 Tf 56 630 Td (Cut page load time from four seconds to one) Tj ET
+BT /F1 10 Tf 56 617.5 Td (by moving rendering to the edge.) Tj ET
+BT /F1 10 Tf 56 605 Td (Designed the GraphQL gateway that unified) Tj ET
+BT /F1 10 Tf 56 592.5 Td (six legacy REST services behind a single) Tj ET
+BT /F1 10 Tf 56 580 Td (schema and typed client generation.) Tj ET
+BT /F1 10 Tf 56 567.5 Td (Introduced visual regression testing that) Tj ET
+BT /F1 10 Tf 56 555 Td (caught layout breaks before release.) Tj ET
+BT /F2 10 Tf 56 532.5 Td (Cobalt Studio) Tj ET
+BT /F1 10 Tf 56 520 Td (Web Developer \(2016-2019\)) Tj ET
+BT /F1 10 Tf 56 507.5 Td (Delivered twenty client sites on a fixed) Tj ET
+BT /F1 10 Tf 56 495 Td (weekly release cadence.) Tj ET
+BT /F1 10 Tf 56 482.5 Td (Built a shared component library that) Tj ET
+BT /F1 10 Tf 56 470 Td (cut new project setup from days to) Tj ET
+BT /F1 10 Tf 56 457.5 Td (hours for the whole team.) Tj ET
+BT /F2 10 Tf 56 435 Td (Quartz Agency) Tj ET
+BT /F1 10 Tf 56 422.5 Td (Freelance Developer \(2015-2016\)) Tj ET
+BT /F1 10 Tf 56 410 Td (Maintained WordPress and static sites for) Tj ET
+BT /F1 10 Tf 56 397.5 Td (twelve small businesses.) Tj ET
+BT /F1 10 Tf 56 385 Td (Handled everything from hosting to) Tj ET
+BT /F1 10 Tf 56 372.5 Td (accessibility audits end to end.) Tj ET
+BT /F2 12 Tf 320 695 Td (SKILLS) Tj ET
+BT /F1 10 Tf 320 680 Td (TypeScript, React, Node.js, AWS,) Tj ET
+BT /F1 10 Tf 320 667.5 Td (PostgreSQL, Redis, GraphQL,) Tj ET
+BT /F1 10 Tf 320 655 Td (Docker, Terraform) Tj ET
+BT /F2 12 Tf 320 632.5 Td (CERTIFICATIONS) Tj ET
+BT /F1 10 Tf 320 617.5 Td (Frontend Developer Certified) Tj ET
+BT /F1 10 Tf 320 605 Td (Falcon Academy \(2021\)) Tj ET
+BT /F2 12 Tf 320 582.5 Td (VOLUNTEERING) Tj ET
+BT /F1 10 Tf 320 567.5 Td (Code mentor at Harbor Teens) Tj ET
+BT /F1 10 Tf 320 555 Td (since 2020, teaching web basics to) Tj ET
+BT /F1 10 Tf 320 542.5 Td (ninety students per year.) Tj ET
+BT /F1 10 Tf 320 530 Td (Organized two accessibility hackathons) Tj ET
+BT /F1 10 Tf 320 517.5 Td (for the local developer community.) Tj ET
+BT /F2 12 Tf 320 495 Td (AWARDS) Tj ET
+BT /F1 10 Tf 320 480 Td (Impact Award at Emerald Labs \(2022\)) Tj ET
+BT /F2 12 Tf 320 457.5 Td (INTERESTS) Tj ET
+BT /F1 10 Tf 320 442.5 Td (Trail running, typography,) Tj ET
+BT /F1 10 Tf 320 430 Td (open source tooling for design) Tj ET
+BT /F1 10 Tf 320 417.5 Td (systems.) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000123 00000 n 
+0000000286 00000 n 
+0000000356 00000 n 
+0000000431 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+3275
+%%EOF

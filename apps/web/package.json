@@ -1,0 +1,52 @@
+{
+  "name": "web",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "copy:paged": "node -e \"require('fs').mkdirSync('public',{recursive:true});require('fs').copyFileSync('node_modules/pagedjs/dist/paged.polyfill.js','public/paged.polyfill.js')\"",
+    "prebuild": "pnpm run copy:paged",
+    "predev": "pnpm run copy:paged",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint src/ e2e/",
+    "type-check": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "geist": "^1.7.2",
+    "lucide-react": "^1.47.0",
+    "motion": "^13.4.0",
+    "next": "^15.1.7",
+    "next-themes": "^0.4.6",
+    "pagedjs": "0.4.3",
+    "radix-ui": "^1.6.7",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "resume-templates": "workspace:*",
+    "schema": "workspace:*",
+    "sonner": "^2.0.8",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.1",
+    "@cv-adapter/tsconfig": "workspace:*",
+    "@playwright/test": "^1.50.1",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@types/node": "^22.13.5",
+    "@types/pg": "^8.11.11",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.20.0",
+    "happy-dom": "^17.1.8",
+    "pg": "^8.13.3",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.6"
+  }
+}

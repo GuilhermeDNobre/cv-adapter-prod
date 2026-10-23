@@ -1,0 +1,17 @@
+# OSCAR TOPAZ
+
+### Data Engineer
+
+## PROFILE
+
+PageOneMarker data engineer with six years building batch and streaming pipelines for retail analytics workloads.
+
+# PageTwoMarker EXPERIENCE
+
+## Granite Corp-Data Engineer (2018-2024)
+
+Moved the company warehouse to Snowflake with zero downtime and cut query cost by sixty percent.
+
+# PageThreeMarker EDUCATION
+
+Coastal University-M.Sc. Data Science (2016-2018) Federal Institute-B.Sc. Statistics (2012-2016)

@@ -1,0 +1,78 @@
+%PDF-1.7
+%‚„œ”
+1 0 obj
+<< /Pages 2 0 R /Type /Catalog >>
+endobj
+2 0 obj
+<< /Count 1 /Kids [ 3 0 R ] /Type /Pages >>
+endobj
+3 0 obj
+<< /Contents 6 0 R /CropBox [ 0 0 612 792 ] /MediaBox [ 0 0 612 792 ] /Parent 2 0 R /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Type /Page >>
+endobj
+4 0 obj
+<< /BaseFont /Helvetica /Subtype /Type1 /Type /Font >>
+endobj
+5 0 obj
+<< /BaseFont /Helvetica-Bold /Subtype /Type1 /Type /Font >>
+endobj
+6 0 obj
+<< /Length 2492 >>
+stream
+BT /F2 16 Tf 56 740 Td (MARIANA QUARTZ) Tj ET
+BT /F1 11 Tf 56 720 Td (Backend Developer) Tj ET
+BT /F2 12 Tf 56 696.25 Td (SUMMARY) Tj ET
+BT /F1 10 Tf 56 681.25 Td (Backend developer focused on Python services) Tj ET
+BT /F1 10 Tf 56 668.75 Td (for eight years, shipping reliable payment) Tj ET
+BT /F1 10 Tf 56 656.25 Td (and data APIs used by thousands of teams.) Tj ET
+BT /F2 12 Tf 56 633.75 Td (EXPERIENCE) Tj ET
+BT /F2 10 Tf 56 618.75 Td (Northwind Software) Tj ET
+BT /F1 10 Tf 56 606.25 Td (Lead Engineer \(2020-2024\)) Tj ET
+BT /F1 10 Tf 56 593.75 Td (Rebuilt the checkout pipeline and cut) Tj ET
+BT /F1 10 Tf 56 581.25 Td (latency by forty percent during the) Tj ET
+BT /F1 10 Tf 56 568.75 Td (migration to event driven services.) Tj ET
+BT /F1 10 Tf 56 556.25 Td (Mentored five engineers through weekly) Tj ET
+BT /F1 10 Tf 56 543.75 Td (design reviews and pairing sessions.) Tj ET
+BT /F2 10 Tf 56 521.25 Td (Vendor Alpha) Tj ET
+BT /F1 10 Tf 56 508.75 Td (Python Developer \(2016-2020\)) Tj ET
+BT /F1 10 Tf 56 496.25 Td (Built ingestion jobs handling one million) Tj ET
+BT /F1 10 Tf 56 483.75 Td (events per day with Celery and Redis.) Tj ET
+BT /F1 10 Tf 56 471.25 Td (Owned the on-call rotation for the) Tj ET
+BT /F1 10 Tf 56 458.75 Td (payments domain and cut incident time) Tj ET
+BT /F1 10 Tf 56 446.25 Td (in half with better runbooks.) Tj ET
+BT /F2 10 Tf 56 423.75 Td (Baltic Systems) Tj ET
+BT /F1 10 Tf 56 411.25 Td (Junior Developer \(2014-2016\)) Tj ET
+BT /F1 10 Tf 56 398.75 Td (Maintained Django dashboards for logistics) Tj ET
+BT /F1 10 Tf 56 386.25 Td (customers across three countries.) Tj ET
+BT /F2 12 Tf 320 740 Td (SKILLS) Tj ET
+BT /F1 10 Tf 320 725 Td (Python, Django, Flask, Celery,) Tj ET
+BT /F1 10 Tf 320 712.5 Td (Redis, PostgreSQL, Docker,) Tj ET
+BT /F1 10 Tf 320 700 Td (Kubernetes, Terraform) Tj ET
+BT /F2 12 Tf 320 677.5 Td (EDUCATION) Tj ET
+BT /F2 10 Tf 320 662.5 Td (Delta Institute) Tj ET
+BT /F1 10 Tf 320 650 Td (B.Sc. Computer Science) Tj ET
+BT /F1 10 Tf 320 637.5 Td (\(2010-2014\)) Tj ET
+BT /F2 12 Tf 320 615 Td (LANGUAGES) Tj ET
+BT /F1 10 Tf 320 600 Td (Portuguese \(native\)) Tj ET
+BT /F1 10 Tf 320 587.5 Td (English \(fluent\)) Tj ET
+BT /F1 10 Tf 320 575 Td (Spanish \(intermediate\)) Tj ET
+BT /F2 12 Tf 320 552.5 Td (CERTIFICATIONS) Tj ET
+BT /F1 10 Tf 320 537.5 Td (Professional Cloud Developer) Tj ET
+BT /F1 10 Tf 320 525 Td (\(2021\)) Tj ET
+BT /F1 10 Tf 320 512.5 Td (Certified Kubernetes) Tj ET
+BT /F1 10 Tf 320 500 Td (Administrator \(2022\)) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000123 00000 n 
+0000000286 00000 n 
+0000000356 00000 n 
+0000000431 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+2974
+%%EOF

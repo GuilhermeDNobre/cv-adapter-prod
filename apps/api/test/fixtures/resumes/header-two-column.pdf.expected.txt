@@ -1,0 +1,37 @@
+# PATRICK RUBY
+
+### Full Stack Engineer-Sao Paulo, Brazil
+
+## EXPERIENCE
+
+### Emerald Labs
+
+Full Stack Engineer (2019-2024) Shipped the customer portal used by three thousand teams across the country. Cut page load time from four seconds to one by moving rendering to the edge. Designed the GraphQL gateway that unified six legacy REST services behind a single schema and typed client generation. Introduced visual regression testing that caught layout breaks before release.
+
+### Cobalt Studio
+
+Web Developer (2016-2019) Delivered twenty client sites on a fixed weekly release cadence. Built a shared component library that cut new project setup from days to hours for the whole team.
+
+### Quartz Agency
+
+Freelance Developer (2015-2016) Maintained WordPress and static sites for twelve small businesses. Handled everything from hosting to accessibility audits end to end.
+
+## SKILLS
+
+TypeScript, React, Node.js, AWS, PostgreSQL, Redis, GraphQL, Docker, Terraform
+
+## CERTIFICATIONS
+
+Frontend Developer Certified Falcon Academy (2021)
+
+## VOLUNTEERING
+
+Code mentor at Harbor Teens since 2020, teaching web basics to ninety students per year. Organized two accessibility hackathons for the local developer community.
+
+## AWARDS
+
+Impact Award at Emerald Labs (2022)
+
+## INTERESTS
+
+Trail running, typography, open source tooling for design systems.

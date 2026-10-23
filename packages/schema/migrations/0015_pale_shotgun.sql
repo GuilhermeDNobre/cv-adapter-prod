@@ -1,0 +1,2 @@
+ALTER TABLE "evaluations" ADD COLUMN "resume_id" uuid;--> statement-breakpoint
+ALTER TABLE "evaluations" ADD CONSTRAINT "evaluations_resume_id_resumes_id_fk" FOREIGN KEY ("resume_id") REFERENCES "public"."resumes"("id") ON DELETE cascade ON UPDATE no action;
